@@ -1,0 +1,7 @@
+query GetAllMovie {
+  getMovie {
+    id
+    title
+    poster_path
+  }
+}

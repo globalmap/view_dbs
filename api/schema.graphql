@@ -1,0 +1,45 @@
+type Movie {
+    id: ID,
+    title: String,
+    original_title: String,
+    release_date: String,
+    vote_average: Float,
+    poster_path: String,
+    overview: String
+}
+
+type Games {
+    id: ID,
+    slug: String,
+    name: String,
+    released: String,
+    background_image: String,
+    rating: Float,
+    metacritic: Int
+}
+
+type AnimeImages {
+    original: String,
+    preview: String,
+    x96: String,
+    x48: String
+}
+
+type Anime {
+    id: ID,
+    name: String,
+    russian: String,
+    url: String,
+    status: String,
+    image: AnimeImages
+}
+
+
+type Query {
+    getMovie: [Movie]!,
+    getIdMovie(id: ID!): Movie!,
+    getGames: [Games],
+    getIdGames(id: ID!): Games,
+    getAnime: [Anime],
+    getIdAnime(id: ID!): Anime,
+}

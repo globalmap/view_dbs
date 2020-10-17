@@ -1,0 +1,12 @@
+query GetAllAnime {
+  getAnime {
+    id
+    name
+    russian
+    url
+    image {
+      original
+      
+    }
+  }
+}

@@ -1,0 +1,10 @@
+query GetAllGames {
+  getGames {
+    id
+    name
+    background_image
+    rating
+    metacritic
+    slug
+  }
+}
