@@ -4,7 +4,6 @@ import Cards from '../Cards/Cards';
 import { useQuery } from '@apollo/client';
 import HeaderComponent from '../HeaderComponent/HeaderComponent';
 import { loader } from 'graphql.macro';
-import { convertCompilerOptionsFromJson } from 'typescript';
 
 const { Content } = Layout;
 
